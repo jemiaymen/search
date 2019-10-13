@@ -66,9 +66,9 @@
                       <div class="form-group">
                         <span class="form-label">Kids</span>
                         <select class="form-control">
-                            <option ></option>0</option>
+                          <option></option>0</option>
                           <option selected="selected">1</option>
-                          <option >2</option>
+                          <option>2</option>
                           <option>3</option>
                         </select>
                         <span class="select-arrow"></span>
@@ -97,11 +97,21 @@
 
       getValue: "name",
 
+      categories: [{
+        listLocation: "pays",
+        maxNumberOfElements: 6,
+        header: "Destination"
+      }, {
+        listLocation: "hotel",
+        maxNumberOfElements: 6,
+        header: "Hotels"
+      }],
+
       list: {
         match: {
           enabled: true
         },
-        maxNumberOfElements: 8
+        maxNumberOfElements: 12
       },
 
       template: {
